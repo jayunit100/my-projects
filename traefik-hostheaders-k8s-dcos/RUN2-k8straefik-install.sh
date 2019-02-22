@@ -12,7 +12,7 @@ echo
 echo "1. You have installed kubernetes with the proxy via Public Node in RUN1"
 sleep 2
 
-echo "2. You have found the public kubelet's node IP" 
+echo "2. You have found the public kubelet's node IP"
 sleep 2
 
 echo "3. You have edited your local machines '/etc/hosts' file with
@@ -49,6 +49,10 @@ echo "Configuring Tiller and Installing Helm for Traefik Web UI (optional)"
 #Deploy traefik UI
 
   kubectl apply -f traefik-ui.yaml
+
+
+echo "Running tearful dashboard, click enter to proceed or exit - traefik is now up "
+read x
 
 #Deploy Tiller on your K8s Cluster
 
